@@ -1,0 +1,18 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+rankdir=LR ;
+0 [label="boca grande <= 0.154\nentropy = 4.585\nsamples = 24\nvalue = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1\n1, 1, 1, 1, 1, 1]\nclass = ALEX", fillcolor="#e5813900"] ;
+1 [label="lleva gafas <= 0.0875\nentropy = 3.8074\nsamples = 14\nvalue = [0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0\n0, 1, 0, 1, 0, 1]\nclass = ALFRED", fillcolor="#e5ac3900"] ;
+0 -> 1 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+2 [label="(...)", fillcolor="#C0C0C0"] ;
+1 -> 2 ;
+19 [label="(...)", fillcolor="#C0C0C0"] ;
+1 -> 19 ;
+28 [label="vello facial <= 0.7117\nentropy = 3.3219\nsamples = 10\nvalue = [1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1\n1, 0, 1, 0, 1, 0]\nclass = ALEX", fillcolor="#e5813900"] ;
+0 -> 28 [labeldistance=2.5, labelangle=45, headlabel="False"] ;
+29 [label="(...)", fillcolor="#C0C0C0"] ;
+28 -> 29 ;
+38 [label="(...)", fillcolor="#C0C0C0"] ;
+28 -> 38 ;
+}
